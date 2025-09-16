@@ -55,6 +55,15 @@ h1, h2, h3, h4, h5, h6, .page-title {
   font-weight: 600;
   color: #004d4d; /* dark cyan shade */
 }
+p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #2c2c2c;
+  margin-bottom: 1.2em;
+  font-family: "Georgia", serif;
+  letter-spacing: 0.3px;
+}
+
 /* caranya jadi tengah gimanaya */
 .product-image {
     display: block;
@@ -275,6 +284,60 @@ form button:hover {
   background: #45a049;
 }
 
+.mitra-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.mitra-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.mitra-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.mitra-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.mitra-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mitra-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.mitra-card img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+.mitra-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.mitra-card p {
+  font-size: 14px;
+  color: #666;
+}
 
 .quality-table {
   width: 80%;
