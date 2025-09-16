@@ -1,0 +1,463 @@
+/* mohon maaf agak kurang rapih masih gak tau cara optimal rapihin css */
+
+head {
+  box-sizing : border-box;
+}
+
+/* saya gabut mau biar stylish */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  font-size: 48px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 20px 0;
+  border-bottom: 2px solid gray;
+  display: inline-block;
+}
+
+/* Default big banner header */
+header {
+  background-image: url("produk/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 160px 0;             
+  position: fixed;             
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: padding 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+
+header.scrolled {
+  padding: 30px 0;              
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to top, #ffffff, rgb(221, 203, 186)); /* soft gray → beige */
+  margin: 0;
+  padding-top: 320px ; /* same as header's initial padding */
+  color : #333;
+}
+h1, h2, h3, h4, h5, h6, .page-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #004d4d; /* dark cyan shade */
+}
+/* caranya jadi tengah gimanaya */
+.product-image {
+    display: block;
+    margin: 20px auto; /* kenapa harus auto gak bisa center*/
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #008080, #20b2aa);
+  color: white;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.gem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.gem-card {
+  background: rgb(13, 94, 94);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+.gem-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.gem-card:hover img {
+  transform: scale(1.05);
+}
+
+.gem-card a {
+  display: block;
+  font-weight: bold;
+  color: rgb(0, 179, 179);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.gem-card a:hover {
+  color: teal;
+}
+
+.profile-card {
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile-card h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #4CAF50; /* Accent color */
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Makes image circular */
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #4CAF50;
+}
+
+.profile-info p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.profile-info em {
+  color: #666;
+}
+
+.profile-desc {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* General form container */
+form {
+  max-width: 400px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+}
+
+/* Each field wrapper */
+form div {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+/* Input fields */
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+/* Form container */
+.contact-form {
+  max-width: 450px;
+  background: #fff;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Each field */
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+/* Labels */
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Inputs & textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+  outline: none;
+}
+
+/* Button */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #45a049;
+}
+
+
+.quality-table {
+  width: 80%;
+  margin: 40px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Header row */
+.quality-table th {
+  background: linear-gradient(to right, #008080, #20b2aa);
+  color: #fff;
+  font-weight: 600;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Body rows */
+.quality-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+/* Alternate row background */
+.quality-table tr:nth-child(even) td {
+  background: #f9f9f9;
+}
+
+/* Hover effect */
+.quality-table tr:hover td {
+  background: #e0f7f7; /* light teal highlight */
+  cursor: pointer;
+}
+
+/* Price column emphasis */
+.quality-table td.price {
+  font-weight: bold;
+  color: #008080;
+}
+
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.product img {
+  width: 150px;
+  border-radius: 10px;
+}
+.product p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Main Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background: darkcyan;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 0;
+}
+
+/* Navigation List */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation List Items */
+nav ul li {
+  position: relative;
+}
+
+/* Navigation Links */
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+/* Navigation Hover Effects */
+nav ul li:hover {
+  background: #005a5a;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+/* Dropdown Menu */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: darkcyan;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Show Dropdown on Hover */
+nav ul li:hover > ul {
+  display: flex;
+}
+
+/* Dropdown List Items */
+nav ul ul li {
+  width: 100%;
+}
+
+/* Dropdown Links */
+nav ul ul li a {
+  padding: 20px 20px;
+  height: auto;
+  line-height: normal;
+  text-align: left;
+  border-bottom: 1px solid #005a5a;
+}
+
+nav ul ul li:last-child a {
+  border-bottom: none;
+}
+
+/* Dropdown Hover Effects */
+nav ul ul li a:hover {
+  background: #007373;
+  color: yellow;
+}
+
+article {
+    float: left;
+    padding: 50px;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 600px;
+    /* hanya untuk contoh saja */
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer:hover {
+  background: #444;
+}
+
+
+/* Responsive layout - buat 2 kolom/kotak */
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
