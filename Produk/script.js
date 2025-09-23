@@ -11,4 +11,11 @@ window.addEventListener("scroll", () => {
 function myFunction() {
   document.getElementById("frm1").submit();
 }
+const cards = document.querySelectorAll(".gem-card");
+const btn = document.getElementById("colorBtn");
 
+btn.addEventListener("click", () => {
+  cards.forEach(card => {
+    card.style.color = "violet";
+  });
+});
