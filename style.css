@@ -23,7 +23,7 @@ head {
 
 /* Default big banner header */
 header {
-  background-image: url("./produk/images/banner.jpg");
+  background-image: url("Produk/images/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
