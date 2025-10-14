@@ -2,9 +2,10 @@
     <head>
         <title>Store Berkah Meriah</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="calc.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     </head>
-
+    
     <body style></body>
 	<header><h5> . </h5></header>
         <div class="welcome-section"><center><p class = "page-title"><b>.: How To Order :.</b></p></center>
@@ -57,6 +58,20 @@
             </form>
 
         <p style="text-align: center;">Catatan : jangan dulu disubmit karena belom ada backendnya</p>
+        <script src="calc.js"></script>
+        <div class="calculator-section">
+            <table>
+                <tr><th>Gem</th><th>Price</th><th>Quantity</th></tr>
+                <tr><td>Ruby</td><td>Rp. 20.000.000</td><td><input type="number" id="ruby" min="0" value="0"></td></tr>
+                <tr><td>Sapphire</td><td>Rp 25.000.000</td><td><input type="number" id="sapphire" min="0" value="0"></td></tr>
+                <tr><td>Emerald</td><td>Rp. 30.000.000</td><td><input type="number" id="emerald" min="0" value="0"></td></tr>
+                <tr><td>Diamond</td><td>Rp. 75.000.000</td><td><input type="number" id="diamond" min="0" value="0"></td></tr>
+                <tr><td>Moonstone</td><td>Rp 450.000</td><td><input type="number" id="moonstone" min="0" value="0"></td></tr>
+            </table>
+
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <div id="result"></div>
+        </div>
         <footer>Copright &copy; 2025 by Daffa Fauzan F-IF1</footer>
         <script src="Produk/script.js"></script>
     </body>

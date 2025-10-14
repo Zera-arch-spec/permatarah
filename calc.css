@@ -1,0 +1,93 @@
+/* Wrap your calculator in this section if possible */
+.calculator-section {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Table layout */
+.calculator-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+/* Table header */
+.calculator-section th {
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Table cells */
+.calculator-section td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Alternating row colors */
+.calculator-section tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* On hover effect */
+.calculator-section tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Number input styling */
+.calculator-section input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: right;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.calculator-section input[type="number"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+/* Calculate button */
+.calculator-section button {
+  width: 100%;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.calculator-section button:hover {
+  background: #45a049;
+}
+
+/* Result box */
+#result {
+  margin-top: 15px;
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+#result h2 {
+  color: #2e7d32;
+}
