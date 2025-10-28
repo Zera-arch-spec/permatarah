@@ -16,7 +16,7 @@ head {
   color: black;
   letter-spacing: 2px;
   font-weight: bold;
-  padding: 20px 0;
+  padding: 5px 0;
   border-bottom: 2px solid gray;
   display: inline-block;
 }
@@ -167,6 +167,16 @@ p {
   font-size: 1.2rem;
 }
 
+.gem-card .gem-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  color: #f1f1f1;
+  opacity: 0.85;
+  margin-top: 5px;
+  line-height: 1.4;
+  transition: opacity 0.2s ease;
+}
+
 .gem-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.25);
@@ -237,6 +247,25 @@ p {
   font-size: 15px;
   line-height: 1.6;
   text-align: justify;
+}
+
+.content {
+  max-width: 1000px;     /* batasi lebar supaya lebih nyaman dibaca */
+  margin: 30px auto;     /* tempatkan di tengah dengan jarak atas-bawah */
+  padding: 24px 20px;    /* beri ruang di dalam kontainer */
+  background: rgba(255,255,255,0.6); /* opsional: latar lembut untuk kontras */
+  border-radius: 12px;   /* opsional */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* Spasi antar paragraf dan judul */
+.content p {
+  margin: 0 0 1.25em 0;  /* bawah 1.25em */
+  line-height: 1.8;
+}
+.content h2, .content h3 {
+  margin-top: 0;
+  margin-bottom: 0.6em;
 }
 
 /* General form container */
